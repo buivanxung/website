@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title> Technology</title>
+    <link href="css/media_query.css" rel="stylesheet" type="text/css"/>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="css/animate.css" rel="stylesheet" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link href="css/owl.carousel.css" rel="stylesheet" type="text/css"/>
+    <link href="css/owl.theme.default.css" rel="stylesheet" type="text/css"/>
+    <!-- Bootstrap CSS -->
+    <link href="css/style_1.css" rel="stylesheet" type="text/css"/>
+    <!-- Modernizr JS -->
+    <script src="js/modernizr-3.5.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function()
+      {
+        setInterval(function () {
+          var raw_time = new Date();
+          $('#time').html(raw_time.getHours()+":"+(raw_time.getMinutes()+1)+":"+raw_time.getSeconds() + " - "+ raw_time.getDate() + ":" + "4" + ":" + raw_time.getUTCFullYear());
+        }, 100);
+        setInterval(function () {
+          var t1 = Math.floor(Math.random() * (33 - 31 + 1) ) + 31;
+          $('#temp1').html(t1 + " oC");
+          var t2 = Math.floor(Math.random() * (33 - 31 + 1) ) + 31;
+          $('#temp2').html(t2+ " oC");
+          var t3 = Math.floor(Math.random() * (33 - 31 + 1) ) + 31;
+          $('#temp3').html(t3+ " oC");
+          var t4 = Math.floor(Math.random() * (32 - 29 + 1) ) + 29;
+          $('#temp4').html(t4+ " oC");
+          var t5 = Math.floor(Math.random() * (30 - 28 + 1) ) + 28;
+          $('#temp5').html(t5+ " oC");
+          var t6 = Math.floor(Math.random() * (28 - 26 + 1) ) + 26;
+          $('#temp6').html(t6+ " oC");
+
+          var h1 = Math.floor(Math.random() * (80 - 75 + 1) ) + 75;
+          $('#humid1').html(h1 + " %");
+          var h2 = Math.floor(Math.random() * (70 - 65 + 1) ) + 65;
+          $('#humid2').html(h2+ " %");
+          var h3 = Math.floor(Math.random() * (60 - 55 + 1) ) + 55;
+          $('#humid3').html(h3+ " %");
+          var h4 = Math.floor(Math.random() * (60 - 58 + 1) ) + 58;
+          $('#humid4').html(h4+ " %");
+          var h5 = Math.floor(Math.random() * (70 - 66 + 1) ) + 66;
+          $('#humid5').html(h5+ " %");
+          var h6 = Math.floor(Math.random() * (70 - 55 + 1) ) + 55;
+          $('#humid6').html(h6+ " %");
+
+          var h1 = Math.floor(Math.random() * (800 - 750 + 1) ) + 750;
+          $('#light1').html(h1 + " Flex");
+          var h2 = Math.floor(Math.random() * (700 - 650 + 1) ) + 650;
+          $('#light2').html(h2+ " Flex");
+          var h3 = Math.floor(Math.random() * (600 - 550 + 1) ) + 550;
+          $('#light3').html(h3+ " Flex");
+          var h4 = Math.floor(Math.random() * (600 - 580 + 1) ) + 580;
+          $('#light4').html(h4+ " Flex");
+          var h5 = Math.floor(Math.random() * (700 - 660 + 1) ) + 660;
+          $('#light5').html(h5+ " Flex");
+          var h6 = Math.floor(Math.random() * (700 - 550 + 1) ) + 550;
+          $('#light6').html(h6+ " Flex");
+
+          var h1 = Math.floor(Math.random() * (800 - 750 + 1) ) + 750;
+          $('#pres1').html(h1 + " PK");
+          var h2 = Math.floor(Math.random() * (700 - 650 + 1) ) + 650;
+          $('#pres2').html(h2+ " PK");
+          var h3 = Math.floor(Math.random() * (600 - 550 + 1) ) + 550;
+          $('#pres3').html(h3+ " PK");
+          var h4 = Math.floor(Math.random() * (600 - 580 + 1) ) + 580;
+          $('#pres4').html(h4+ " PK");
+          var h5 = Math.floor(Math.random() * (700 - 660 + 1) ) + 660;
+          $('#pres5').html(h5+ " PK");
+          var h6 = Math.floor(Math.random() * (700 - 550 + 1) ) + 550;
+          $('#pres6').html(h6+ " PK");
+
+        },1000);
+        $('#temp1').html("Loading ...");
+        $('#temp2').html("Loading ...");
+        $('#temp3').html("Loading ...");
+        $('#temp4').html("Loading ...");
+        $('#temp5').html("Loading ...");
+        $('#temp6').html("Loading ...");
+        $('#humid1').html("Loading ...");
+        $('#humid2').html("Loading ...");
+        $('#humid3').html("Loading ...");
+        $('#humid4').html("Loading ...");
+        $('#humid5').html("Loading ...");
+        $('#humid6').html("Loading ...");
+        $('#light1').html("Loading ...");
+        $('#light2').html("Loading ...");
+        $('#light3').html("Loading ...");
+        $('#light4').html("Loading ...");
+        $('#light5').html("Loading ...");
+        $('#light6').html("Loading ...");
+        $('#pres1').html("Loading ...");
+        $('#pres2').html("Loading ...");
+        $('#pres3').html("Loading ...");
+        $('#pres4').html("Loading ...");
+        $('#pres5').html("Loading ...");
+        $('#pres6').html("Loading ...");
+        $('#Position1').html("Floor 1 _ 102");
+        $('#Position2').html("Floor 1_ 103");
+        $('#Position3').html("Floor 12_1201");
+        $('#Position4').html("Floor 2_206");
+        $('#Position5').html("Floor 3_302");
+        $('#Position6').html("Floor 4_405");
+        $('#Device1').html("LoRa");
+        $('#Device2').html("LoRa");
+        $('#Device3').html("XDK - BOSCH");
+        $('#Device4').html("LoRa");
+        $('#Device5').html("LoRa");
+        $('#Device6').html("LoRa");
+      });
+    </script>
+</head>
+<body>
+<div class="container-fluid fh5co_header_bg">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 fh5co_mediya_center">
+              <a href="#" class="color_fff fh5co_mediya_setting">
+                <i class="fa fa-clock-o"></i>&nbsp;&nbsp;&nbsp; <strong> <label for=""><span id="time"> </span></label> </strong>
+              </a>
+                <div class="d-inline-block fh5co_trading_posotion_relative"><a class="treding_btn">HACKATHON - 2018</a>
+                    <div class="fh5co_treding_position_absolute"></div>
+                </div>
+                <a  class="color_fff fh5co_mediya_setting">Smart Cities, Smart Environment, Invovation in the Future.</a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <img src="images/trans.png" width="30px" height="100px">
+                <img src="images/bosch.png" width="100px" height="100px" >
+                <img src="images/sihub.png" width="100px" height="100px">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid pb-4 pt-4 paddding">
+  <table>
+    <tr>
+      <table width ="100%">
+        <th style="width: 90%">
+            <h1 style="color:#329a32;"><strong>HACKATHON - 2018</strong></h1>
+        </th>
+      </table>
+    </tr>
+    <tr>
+      <table align="center" >
+        <th>
+          <h1 style="color:DodgerBlue;">Monitoring Status in Building </h1>
+        </th>
+      </table>
+    </tr>
+    <tr>
+      <table style="width: 100%; align: center;" >
+        <tr style="border: 1px solid black">
+          <th style="border: 1px solid black; "><center>Temperature (oC) </center></th>
+          <th style="border: 1px solid black"><center>Humidity (&#37;)</center></th>
+          <th style="border: 1px solid black"><center> Digital Light (Flex)<center></th>
+          <th style="border: 1px solid black"><center> Pressure</center></th>
+          <th style="border: 1px solid black"><center> Position<center></th>
+          <th style="border: 1px solid black;"><center> Device<center></th>
+        </tr>
+        <tr style="border: 1px solid black">
+          <td style="border: 1px solid black;">
+            <img src="images/temp.png" width="40px" height="40px">
+            <label><center><strong><font size = "5"><span id="temp1"></span></font></strong></center></label>
+          </td>
+          <td style="border: 1px solid black;">
+            <img src="images/humid.png" width="40px" height="40px">
+            <label><center><strong><font size = "5"><span id="humid1"></span></font></strong></center></label>
+          </td style="border: 1px solid black;">
+          <td style="border: 1px solid black;">
+            <img src="images/light.png" width="40px" height="40px">
+            <label><center><strong><font size = "5"><span id="light1"></span></font></strong></center></label>
+          </td>
+          <td style="border: 1px solid black;">
+            <img src="images/pres.png" width="40px" height="40px">
+            <label><center><strong><font size = "5"><span id="pres1"></span></font></strong></center></label>
+          </td>
+          <td style="border: 1px solid black;">
+            <img src="images/loca.png" width="40px" height="40px">
+            <label><center><strong><font size = "3"><span id="Position1"></span></font></strong></center></label>
+          </td>
+          <td style="border: 1px solid black;">
+            <img src="images/tech.png" width="60px" height="60px">
+            <label><center><strong><font size = "3"><span id="Device1"></span></font></strong></center></label>
+          </td>
+        </tr>
+        <tr style="border: 1px solid black">
+          <td style="border: 1px solid black;">
+            <img src="images/temp.png" width="40px" height="40px">
+            <label><center><strong><font size = "5"><span id="temp2"></span></font></strong></center></label>
+          </td>
+          <td style="border: 1px solid black;">
+            <img src="images/humid.png" width="40px" height="40px">
+            <label><center><strong><font size = "5"><span id="humid2"></span></font></strong></center></label>
+          </td style="border: 1px solid black;">
+          <td style="border: 1px solid black;">
+            <img src="images/light.png" width="40px" height="40px">
+            <label><center><strong><font size = "5"><span id="light2"></span></font></strong></center></label>
+          </td>
+          <td style="border: 1px solid black;">
+            <img src="images/pres.png" width="40px" height="40px">
+            <label><center><strong><font size = "5"><span id="pres2"></span></font></strong></center></label>
+          </td>
+          <td style="border: 1px solid black;">
+            <img src="images/loca.png" width="40px" height="40px">
+            <label><center><strong><font size = "3"><span id="Position2"></span></font></strong></center></label>
+          </td>
+          <td style="border: 1px solid black;">
+            <img src="images/tech.png" width="60px" height="60px">
+            <label><center><strong><font size = "3"><span id="Device2"></span></font></strong></center></label>
+          </td>
+        </tr>
+        <tr style="border: 1px solid black">
+          <td style="border: 1px solid black;">
+            <img src="images/temp.png" width="40px" height="40px">
+            <label><center><strong><font size = "5"><span id="temp3"></span></font></strong></center></label>
+          </td>
+          <td style="border: 1px solid black;">
+            <img src="images/humid.png" width="40px" height="40px">
+            <label><center><strong><font size = "5"><span id="humid3"></span></font></strong></center></label>
+          </td style="border: 1px solid black;">
+          <td style="border: 1px solid black;">
+            <img src="images/light.png" width="40px" height="40px">
+            <label><center><strong><font size = "5"><span id="light3"></span></font></strong></center></label>
+          </td>
+          <td style="border: 1px solid black;">
+            <img src="images/pres.png" width="40px" height="40px">
+            <label><center><strong><font size = "5"><span id="pres3"></span></font></strong></center></label>
+          </td>
+          <td style="border: 1px solid black;">
+            <img src="images/loca.png" width="40px" height="40px">
+            <label><center><strong><font size = "3"><span id="Position3"></span></font></strong></center></label>
+          </td>
+          <td style="border: 1px solid black;">
+            <img src="images/tech.png" width="60px" height="60px">
+            <label><center><strong><font size = "3"><span id="Device3"></span></font></strong></center></label>
+          </td>
+        </tr>
+        <tr style="border: 1px solid black">
+          <td style="border: 1px solid black;">
+            <img src="images/temp.png" width="40px" height="40px">
+            <label><center><strong><font size = "5"><span id="temp4"></span></font></strong></center></label>
+          </td>
+          <td style="border: 1px solid black;">
+            <img src="images/humid.png" width="40px" height="40px">
+            <label><center><strong><font size = "5"><span id="humid4"></span></font></strong></center></label>
+          </td style="border: 1px solid black;">
+          <td style="border: 1px solid black;">
+            <img src="images/light.png" width="40px" height="40px">
+            <label><center><strong><font size = "5"><span id="light4"></span></font></strong></center></label>
+          </td>
+          <td style="border: 1px solid black;">
+            <img src="images/pres.png" width="40px" height="40px">
+            <label><center><strong><font size = "5"><span id="pres4"></span></font></strong></center></label>
+          </td>
+          <td style="border: 1px solid black;">
+            <img src="images/loca.png" width="40px" height="40px">
+            <label><center><strong><font size = "3"><span id="Position4"></span></font></strong></center></label>
+          </td>
+          <td style="border: 1px solid black;">
+            <img src="images/tech.png" width="60px" height="60px">
+            <label><center><strong><font size = "3"><span id="Device4"></span></font></strong></center></label>
+          </td>
+        </tr>
+        <tr style="border: 1px solid black">
+          <td style="border: 1px solid black;">
+            <img src="images/temp.png" width="40px" height="40px">
+            <label><center><strong><font size = "5"><span id="temp5"></span></font></strong></center></label>
+          </td>
+          <td style="border: 1px solid black;">
+            <img src="images/humid.png" width="40px" height="40px">
+            <label><center><strong><font size = "5"><span id="humid5"></span></font></strong></center></label>
+          </td style="border: 1px solid black;">
+          <td style="border: 1px solid black;">
+            <img src="images/light.png" width="40px" height="40px">
+            <label><center><strong><font size = "5"><span id="light5"></span></font></strong></center></label>
+          </td>
+          <td style="border: 1px solid black;">
+            <img src="images/pres.png" width="40px" height="40px">
+            <label><center><strong><font size = "5"><span id="pres5"></span></font></strong></center></label>
+          </td>
+          <td style="border: 1px solid black;">
+            <img src="images/loca.png" width="40px" height="40px">
+            <label><center><strong><font size = "3"><span id="Position5"></span></font></strong></center></label>
+          </td>
+          <td style="border: 1px solid black;">
+            <img src="images/tech.png" width="60px" height="60px">
+            <label><center><strong><font size = "3"><span id="Device5"></span></font></strong></center></label>
+          </td>
+        </tr>
+        <tr style="border: 1px solid black">
+          <td style="border: 1px solid black;">
+            <img src="images/temp.png" width="40px" height="40px">
+            <label><center><strong><font size = "5"><span id="temp6"></span></font></strong></center></label>
+          </td>
+          <td style="border: 1px solid black;">
+            <img src="images/humid.png" width="40px" height="40px">
+            <label><center><strong><font size = "5"><span id="humid6"></span></font></strong></center></label>
+          </td style="border: 1px solid black;">
+          <td style="border: 1px solid black;">
+            <img src="images/light.png" width="40px" height="40px">
+            <label><center><strong><font size = "5"><span id="light6"></span></font></strong></center></label>
+          </td>
+          <td style="border: 1px solid black;">
+            <img src="images/pres.png" width="40px" height="40px">
+            <label><center><strong><font size = "5"><span id="pres6"></span></font></strong></center></label>
+          </td>
+          <td style="border: 1px solid black;">
+            <img src="images/loca.png" width="40px" height="40px">
+            <label><center><strong><font size = "3"><span id="Position6"></span></font></strong></center></label>
+          </td>
+          <td style="border: 1px solid black;">
+            <img src="images/tech.png" width="60px" height="60px">
+            <label><center><strong><font size = "3"><span id="Device6"></span></font></strong></center></label>
+          </td>
+        </tr>
+      </table>
+    </tr>
+  </table>
+</div>
+<div class="container-fluid fh5co_footer_right_reserved">
+    <div class="container">
+        <div class="row  ">
+            <div class="col-12 col-md-6 py-4 Reserved"> Hackathon Contest - <strong>SIHUB </strong> - <strong>BOSCH </strong> </div>
+            <div class="col-12 col-md-6 spdp_right py-4">
+        </div>
+    </div>
+</div>
+<div class="gototop js-top">
+    <a href="#" class="js-gotop"><i class="fa fa-arrow-up"></i></a>
+</div>
+<script src="js/jquery.waypoints.min.js"></script>
+<!-- Main -->
+<script src="js/main.js"></script>
+
+</body>
+</html>
