@@ -4,133 +4,104 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title> LoRa Technology - Công nghệ LoRa Việt Nam</title>
+    <title> Wireless Technology Việt Nam</title>
     <link href="css/media_query.css" rel="stylesheet" type="text/css"/>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
-
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
-         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="css/font-awesome.min.css">
     <link href="css/animate.css" rel="stylesheet" type="text/css"/>
-    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
     <link href="css/owl.carousel.css" rel="stylesheet" type="text/css"/>
     <link href="css/owl.theme.default.css" rel="stylesheet" type="text/css"/>
-    <!-- Bootstrap CSS -->
     <link href="css/style_1.css" rel="stylesheet" type="text/css"/>
-    <!-- Modernizr JS -->
     <script src="js/modernizr-3.5.0.min.js"></script>
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="js/jquery-1.12.4.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/tether.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script type="text/javascript">
+    <script type="text/javascript"> -->
     $(document).ready(function()
       {
         setInterval(function () {
           var raw_time = new Date();
-          $('#time').html(raw_time.getHours()+":"+(raw_time.getMinutes()+1)+":"+raw_time.getSeconds() + "--"+ raw_time.getDate() + ":" + raw_time.getMonth() + ":" + raw_time.getUTCFullYear());
+          $('#time').html(raw_time.getUTCFullYear());
         }, 100);
       });
     </script>
 </head>
 <body>
-  <div class="container-fluid fh5co_header_bg">
-      <div class="container">
-          <div class="row">
-              <div class="col-12 fh5co_mediya_center">
-                <a href="#" class="color_fff fh5co_mediya_setting">
-                  <i class="fa fa-clock-o"></i>&nbsp;&nbsp;&nbsp; <label for=""><span id="time"> </span></label>
-                </a>
-                  <div class="d-inline-block fh5co_trading_posotion_relative"><a href="#" class="treding_btn">Công nghệ</a>
-                      <div class="fh5co_treding_position_absolute"></div>
-                  </div>
-                  <a href="#" class="color_fff fh5co_mediya_setting">Cung cấp thiết bị công nghệ giám sát và điều khiển sử  dụng mạng không dây</a>
-              </div>
-          </div>
-      </div>
-  </div>
-  <div class="container-fluid">
-      <div class="container">
-          <div class="row">
-              <div class="col-12 col-md-3 fh5co_padding_menu">
-                      <img src="images/logo.png" alt="img" class="fh5co_logo_width"/>
-              </div>
-              <div class="col-12 col-md-9 align-self-center fh5co_mediya_right">
-                  <div class="text-center d-inline-block">
-                      <a  class="fh5co_display_table"><div class="fh5co_verticle_middle"><i class="fa fa-search"></i></div></a>
-                  </div>
-                  <div class="text-center d-inline-block">
-                      <a  class="fh5co_display_table"><div class="fh5co_verticle_middle"><i class="fa fa-linkedin"></i></div></a>
-                  </div>
-                  <div class="text-center d-inline-block">
-                      <a  class="fh5co_display_table"><div class="fh5co_verticle_middle"><i class="fa fa-google-plus"></i></div></a>
-                  </div>
-                  <div class="text-center d-inline-block">
-                      <a href="https://twitter.com/XungBuiVan" target="_blank" class="fh5co_display_table"><div class="fh5co_verticle_middle"><i class="fa fa-twitter"></i></div></a>
-                  </div>
-                  <div class="text-center d-inline-block">
-                      <a href="https://fb.com/CEPAMAX" target="_blank" class="fh5co_display_table"><div class="fh5co_verticle_middle"><i class="fa fa-facebook"></i></div></a>
-                  </div>
-                  <div class="d-inline-block text-center"><img src="images/country2.png" alt="img" class="fh5co_country_width"/></div>
-                  <div class="d-inline-block text-center dd_position_relative ">
-                      <select class="form-control fh5co_text_select_option">
-                          <option>VietNam </option>
-                          <option>English </option>
-                      </select>
-                  </div>
-                  <div class="clearfix"></div>
-              </div>
-          </div>
-      </div>
-  </div>
-  <div class="container-fluid bg-faded fh5co_padd_mediya padding_786">
-      <div class="container padding_786">
-          <nav class="navbar navbar-toggleable-md navbar-light ">
-              <button class="navbar-toggler navbar-toggler-right mt-3" type="button" data-toggle="collapse"
-                      data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                      aria-label="Toggle navigation"><span class="fa fa-bars"></span></button>
-              <a class="navbar-brand" href="#"><img src="images/logo.png" alt="img" class="mobile_logo_width"/></a>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav mr-auto">
-                      <li class="nav-item active">
-                          <a class="nav-link" href="index.html">Trang chủ <span class="sr-only">(current)</span></a>
-                      </li>
+<div class="container-fluid">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-3 fh5co_padding_menu">
+                    <img src="images/logo.png" alt="img" class="fh5co_logo_width"/>
+            </div>
+            <div class="col-12 col-md-9 align-self-center fh5co_mediya_right">
+                <div class="d-inline-block text-center dd_position_relative btn-group-vertical">
+                    <button type="button" class="btn btn-link btn-md" data-toggle="modal" data-target="#myModal">Đăng nhập</button>
+                    <button type="button" class="btn btn-link btn-md" data-toggle="modal" data-target="#myModal2">Đăng kí</button>
+                </div>
+                <div class="d-inline-block text-center dd_position_relative">
+                  <button type="button" class="btn btn-link btn-md" data-toggle="modal" data-target="#myModal3">Quên mật khẩu</button>
+                </div>
+                <div class="d-inline-block text-center"><img src="images/country2.png"  alt="img" class="fh5co_country_width"/></div>
+                <div class="d-inline-block text-center"><img src="images/country.png"  alt="img" class="fh5co_country_width"/></div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid bg-faded fh5co_padd_mediya padding_786 ">
+    <div class="container padding_786">
+        <nav class="navbar navbar-toggleable-md navbar-light ">
+            <button class="navbar-toggler navbar-toggler-right mt-3" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation"><span class="fa fa-bars"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Trang chủ <span class="sr-only">(current)</span></a>
+                    </li>
 
-                      <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuButton4" data-toggle="dropdown"
-                           aria-haspopup="true" aria-expanded="false">Sản Phẩm <span class="sr-only">(current)</span></a>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuButton4" data-toggle="dropdown"
+                         aria-haspopup="true" aria-expanded="false">Sản Phẩm <span class="sr-only">(current)</span></a>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink_1">
+                          <a class="dropdown-item" href="#">LoRaWan</a>
+                          <!-- <a class="dropdown-item" href="#">Bluetooth</a>
+                          <a class="dropdown-item" href="#">WiFi</a> -->
+                      </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuButton2" data-toggle="dropdown"
+                           aria-haspopup="true" aria-expanded="false">Dịch vụ <span class="sr-only">(current)</span></a>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuLink_1">
-                            <a class="dropdown-item" href="#">LoRaWan</a>
-                            <a class="dropdown-item" href="#">Bluetooth</a>
-                            <a class="dropdown-item" href="#">WiFi</a>
+                            <!-- <a class="dropdown-item" href="#">Nhận hiết kế mạch điện tử</a>
+                            <a class="dropdown-item" href="#">Nhận thiết kế antenna</a> -->
+                            <a class="dropdown-item" href="demo.html">Xây dựng hệ thống giám sát thời gian thực</a>
                         </div>
-                      </li>
-                      <li class="nav-item dropdown">
-                          <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuButton2" data-toggle="dropdown"
-                             aria-haspopup="true" aria-expanded="false">Dịch vụ <span class="sr-only">(current)</span></a>
-                          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink_1">
-                              <a class="dropdown-item" href="#">Nhận hiết kế mạch điện tử</a>
-                              <a class="dropdown-item" href="#">Nhận thiết kế antenna</a>
-                              <a class="dropdown-item" href="demo.html">Xây dựng hệ thống giám sát thời gian thực</a>
-                          </div>
-                      </li>
-                      <li class="nav-item dropdown">
-                          <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuButton3" data-toggle="dropdown"
-                             aria-haspopup="true" aria-expanded="false">Công nghệ ứng dụng<span class="sr-only">(current)</span></a>
-                          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink_1">
-                              <a class="dropdown-item" href="award.html">LoRa Technology</a>
-                              <a class="dropdown-item" href="#">WiFi</a>
-                              <a class="dropdown-item" href="#">Bluetooth Low Power</a>
-                              <a class="dropdown-item" href="#">Zegbee</a>
-                          </div>
-                      </li>
-                      <li class="nav-item ">
-                          <a class="nav-link" href="Contact_us.html">Liên lạc <span class="sr-only">(current)</span></a>
-                      </li>
-                  </ul>
-              </div>
-          </nav>
-      </div>
-  </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuButton3" data-toggle="dropdown"
+                           aria-haspopup="true" aria-expanded="false">Công nghệ ứng dụng<span class="sr-only">(current)</span></a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink_1">
+                            <a class="dropdown-item" href="award.html">LoRa Technology</a>
+                            <!-- <a class="dropdown-item" href="#">WiFi</a>
+                            <a class="dropdown-item" href="#">Bluetooth Low Power</a>
+                            <a class="dropdown-item" href="#">Zegbee</a> -->
+                        </div>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="Contact_us.html">Liên lạc <span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</div>
 <div class="container-fluid">
   <h5> <strong>Công Nghệ LoRa tại Việt Nam </strong> </h5>
     <p>
