@@ -122,6 +122,20 @@
       Kết nối luôn mở liên tục. Nên năng lượng tiêu thụ nhiểu nhất
       trong ba lớp.
     </p>
+    <p>
+      <strong>Sự khác nhau giữa LoRa và LoRaWan</strong>
+      <p>
+        <strong>LoRa</strong> là một sóng RF hoạt động ở các giải tần 433MHz và 923MHz tại Châu Á, 868MHz tại Châu Âu, 915MHz tại Châu Mĩ. Vì thế khi nói đến giao tiếp truyền nhận
+        bằng sóng LoRa thì nó mang đầy đủ đặc tính của sóng RF. Là mô hình kết nối Node to Node cùng thông số LoRa tần số, cùng SF, datarate, CRC mới đạt được hiệu suất cao nhất.
+        Nếu 1 Node nhận và 2 Node gửi cũng các thông số của LoRa thì nó sẽ bị xung đột tín hiệu dẫn đến rớt gói tin.
+      </p>
+      <p>
+        <strong>LoRaWan</strong> ra đời để giải quyết sự xung đột tín hiệu khi nhiều Node LoRa hoạt động. Với hàng nghìn Node đang chạy LoRaWan phía người dùng có thể quản lí được thông tin từng Node cụ thể
+        và rõ ràng. Vì thế để hoạt động được LoRaWan thì cần đầy đủ các thành phần cần thiết để xây dựng nên mô hình LoRaWan. Đối với chúng tôi đã xây dựng thành công mô hình LoRaWan từ phần cứng đến phần mềm. Không phụ thuộc vào
+        bên thứ 2. Mô hình LoRaWan muốn hoạt động được bao gồm các thành phần: Node hỗ trợ LoRaWan, Gateway đa kênh, LoRa Server (Network Server). Khi có đầy đủ các thành phần trên một người quản lí hoặc khách hàng có thể quản lí
+         từng thiết bị một cách dễ dàng.
+      </p>
+    </p>
   <div style="text-center">
     <embed src="file/file1.pdf#toolbar=0&navpanes=0&scrollbar=0" width="1400px" height="1700px" type='application/pdf' />
   </div>
