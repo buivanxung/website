@@ -274,6 +274,7 @@ footer {
   display: table;
   color: green;
   border: 0.5px 0.5px  0.5px 0.5px ;
+  margin-top: 10px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
