@@ -66,7 +66,6 @@
 
     var videos = function() {
 
-
         $(document).ready(function () {
             $('#play-video').on('click', function (ev) {
                 $(".fh5co_hide").fadeOut();
@@ -155,13 +154,13 @@
 	var goToTop = function() {
 
 		$('.js-gotop').on('click', function(event){
-			
+
 			event.preventDefault();
 
 			$('html, body').animate({
 				scrollTop: $('html').offset().top
 			}, 500, 'swing');
-			
+
 			return false;
 		});
 
@@ -175,10 +174,10 @@
 			}
 
 		});
-	
+
 	};
 
-	
+
 	$(function(){
 		owlCarousel();
 		videos();

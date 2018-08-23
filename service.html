@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title> LoRa and LoRaWAN Technology in Viet Nam</title>
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
+    <link href="css/style.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="css/admin.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      .mySlides {display:none;}
+    </style>
+  </head>
+
+  <body>
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-3 fh5co_padding_menu">
+                  <a href="index.html"><img src="images/icon.png" alt="img" class="fh5co_logo_width"/></a>
+                </div>
+                <div class="col-12 col-md-9 align-self-center fh5co_mediya_right">
+                    <div class="d-inline-block text-center dd_position_relative">
+                      <button onclick="location.href='http://admin.wirelesstech.online'" type="button" class=" btn btn-link btn-md ">Đăng nhập</button>
+                    </div>
+                    <div class="d-inline-block text-center"><a href="index.html"><img src="images/country2.png"  alt="img" class="fh5co_country_width"></a></div>
+                    <div class="d-inline-block text-center"><a href="index_us.html"><img src="images/country.png"  alt="img" class="fh5co_country_width"></a></div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+      <div class="topnav" id="myTopnav">
+        <a></a>
+        <a></a>
+        <a href="index.html" >Trang chủ</a>
+        <a href="cards.html">Sản phẩm</a>
+        <a href="service.html" class="active">LoRa Server</a>
+        <div class="dropdown1">
+          <button class="dropbtn">Bài Viết
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown1-content">
+            <a href="award.html">LoRa & LoRaWAN</a>
+          </div>
+        </div>
+        <a href="partner.html">Hợp tác</a>
+        <div class="dropdown1">
+          <button class="dropbtn">Dịch vụ
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown1-content">
+            <a href="#">Nhận tư vấn thiết kế Antenna</a>
+            <a href="#">Thiết kế và lập trình mạch điện</a>
+          </div>
+        </div>
+        <!-- <a href="order.html">Đặt hàng</a> -->
+        <a href="contact.html">Liên Lạc</a>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+      </div>
+    </div>
+    <div class="container-fluid" >
+      <h3 class="w3-center">LoRa Server / Network Server LoRaWAN 433/868/915MHz</h3>
+      <div class="w3-content w3-section" style="max-width:100%">
+        <img class="mySlides" src="products/images/ns1.png" style="width:100%">
+        <img class="mySlides" src="products/images/ns2.png" style="width:100%">
+        <img class="mySlides" src="products/images/ns3.png" style="width:100%">
+        <img class="mySlides" src="products/images/ns4.png" style="width:100%">
+        <img class="mySlides" src="products/images/ns5.png" style="width:100%">
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div style="text-align:center;">
+        <p><a href="contact.html"> <h3> <font color="black"; border: 1px;>Liên hệ với chúng tôi</font></h3></a></p>
+      </div>
+    </div>
+
+    <script>
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+           x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}
+        x[myIndex-1].style.display = "block";
+        setTimeout(carousel, 3000); // Change image every 2 seconds
+    }
+    </script>
+
+  </body>
+</html>
