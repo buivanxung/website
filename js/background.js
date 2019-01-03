@@ -9,7 +9,7 @@ var x = "Total Width: " + screen.width;
 
     function initHeader() {
         width =  screen.width;
-        height = 5000;
+        height = 8000;
         target = {x: width/1, y: height/1};
 
         largeHeader = document.getElementById('large-header');
