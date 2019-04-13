@@ -1,172 +1,65 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+<html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title> LoRa và LoRaWAN Việt Nam</title>
-  <link rel="icon" type="image/png" href="images/favicon.png" />
-  <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
-  <link href="css/style.css" rel="stylesheet" type="text/css"/>
-  <link rel="stylesheet" href="css/admin.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Bui Van Xung">
+    <title>Bui Van Xung Website</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	  <link href="css/animate.css" rel="stylesheet" />
+    <link href="css/style_home.css" rel="stylesheet">
+    <link href="css/default.css" rel="stylesheet">
+    
 </head>
-<body>
-<div class="container-fluid">
-    <div class="container">
-        <div class="row">
-            <div class="col-12 col-md-3 fh5co_padding_menu">
-              <a href="index.html"><img src="images/icon.png" alt="img" class="fh5co_logo_width"/></a>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-custom">
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="index.html">
+                </a>
             </div>
-            <div class="col-12 col-md-9 align-self-center fh5co_mediya_right">
-                <div class="d-inline-block text-center dd_position_relative">
-                  <button onclick="location.href='http://admin.wirelesstech.online'" type="button" class=" btn btn-link btn-md ">Đăng Nhập</button>
-                </div>
-                <div class="d-inline-block text-center"><a href="index.html"><img src="images/country2.png"  alt="img" class="fh5co_country_width"></a></div>
-                <div class="d-inline-block text-center"><a href="index_us.html"><img src="images/country.png"  alt="img" class="fh5co_country_width"></a></div>
-                <div class="clearfix"></div>
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+              <ul class="nav navbar-nav" >
+                  <li><a href="#contact">Products</a></li>
+              </ul>
             </div>
         </div>
-    </div>
-</div>
-<div class="container-fluid">
-  <div class="topnav" id="myTopnav">
-    <a></a>
-    <a></a>
-    <a href="index.html" class="active">Trang chủ</a>
-    <a href="cards.html">Sản phẩm</a>
-    <a href="service.html">LoRa Server</a>
-    <div class="dropdown1">
-      <button class="dropbtn">Bài Viết
-        <i class="fa fa-caret-down"></i>
-      </button>
-      <div class="dropdown1-content">
-        <a href="award.html">LoRa & LoRaWAN</a>
+    </nav>
+    <section id="intro" class="intro">
+      <div class="slogan">
+        <img src="images/image.png" class="img-circle display: block;" alt="Bui Van Xung" width="300" height="300">
+        <h3>Bui Van Xung</h3>
+        <p>Computer Engineering - <strong>Information of Technology University, Viet Nam</strong> </p>
+        <p>Researching <strong>LoRa and LoRaWan Technology</strong>, <strong> Blynk App </strong>  connect to multi IoT device in <strong>Industry</strong> </p>
+        <p>Address: <strong> Ho Chi Minh City , Viet Nam </strong>.  Contact: <strong>+84988279464</strong></p>
+        <a href="https://www.facebook.com/CEPAMAX" class="fa fa-facebook"></a>
       </div>
-    </div>
-    <a href="partner.html">Hợp tác</a>
-    <div class="dropdown1">
-      <button class="dropbtn">Dịch vụ
-        <i class="fa fa-caret-down"></i>
-      </button>
-      <div class="dropdown1-content">
-        <a href="#">Nhận tư vấn thiết kế Antenna</a>
-        <a href="#">Thiết kế và lập trình mạch điện</a>
-      </div>
-    </div>
-    <!-- <a href="order.html">Đặt hàng</a> -->
-    <a href="contact.html">Liên Lạc</a>
-    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-  </div>
-</div>
-<div class="container-fluid" >
-  <h2 style="text-align:center">Sản phẩm OEMs & ODMs</h2>
-  <div class="container">
-    <div class="mySlides">
-      <div class="numbertext">1 / 5</div>
-        <img src="products/images/lorauit.png" style="width:100%">
-    </div>
+    </section>
+    <!-- Custom Theme JavaScript -->
+  <script src="js/js_page/custom.js"></script>
+  <script type="text/javascript">
+    function click (e) {
+      if (!e)
+        e = window.event;
+      if ((e.type && e.type == "contextmenu") || (e.button && e.button == 2) || (e.which && e.which == 3)) {
+        if (window.opera)
+          window.alert("");
+        return false;
+      }
+    }
+    if (document.layers)
+      document.captureEvents(Event.MOUSEDOWN);
+    document.onmousedown = click;
+    document.oncontextmenu = click;
+    </script>
 
-    <div class="mySlides">
-      <div class="numbertext">2 / 5</div>
-        <img src="products/images/lrgw.png" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <div class="numbertext">3 / 5</div>
-        <img src="products/images/interated.png" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <div class="numbertext">4 / 5</div>
-        <img src="products/images/loraserver.png" style="width:100%">
-    </div>
-</div>
-    <!-- Next and previous buttons -->
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-<div>
-    <!-- Image text -->
-    <div class="caption-container">
-      <p id="caption"></p>
-    </div>
-
-    <div class="row">
-      <div class="column">
-        <img class="demo cursor" src="products/images/lorauit.png" style="width:100%" onclick="currentSlide(1)" alt="LoRa Node hỗ trợ LoRa và LoRaWan">
-      </div>
-      <div class="column">
-        <img class="demo cursor" src="products/images/lrgw.png" style="width:100%" onclick="currentSlide(2)" alt="LoRa Gateway 1 kênh">
-      </div>
-      <div class="column">
-        <img class="demo cursor" src="products/images/interated.png" style="width:100%" onclick="currentSlide(3)" alt="Kết hợp LoRaWan trong công nghiệp">
-      </div>
-      <div class="column">
-        <img class="demo cursor" src="products/images/loraserver.png" style="width:100%" onclick="currentSlide(5)" alt="Dich vụ cho thuê LoRa Server">
-      </div>
-    </div>
-  </div>
-</div>
-<div class="container-fluid fh5co_footer_bg pb-3">
-    <div class="container animate-box">
-        <div class="row">
-            <div class="col-12 spdp_right py-5"><img src="images/logo_r.png" alt="img" class="footer_logo"/></div>
-            <div class="clearfix"></div>
-            <div class="col-12 col-md-3 col-lg-5">
-                <div class="footer_main_title py-3"> Về chúng tôi</div>
-                <div class="footer_sub_about pb-3">
-                  Wireless Technology Lab là nhóm đã nghiên  trong một thời gian dài về công nghệ mạng không dây. Cụ thể là Công nghệ LoRa, BLE từ những năm công nghệ này mới ra đời. Đối với chúng tôi một đội ngủ thành viên trẻ luôn năng động và dễ dàng tiếp thu theo những công nghệ ngày càng phát triển và thay đổi không nghừng.
-                  Đối với LoRa nhóm đã tìm hiểu kĩ càng và tự tin mang những sản phẩm đi vào đời sống thực tế.
-                </div>
-                <div class="footer_sub_about pb-3">
-                  Đội ngủ thành viên nhiều kinh nghiệm trong việc thiết kế mạch điện tử, lập trình hệ thống nhúng trên mạch điện tử. Với các dòng chip <strong>ARM, 8051,...</strong> Chúng thôi chú trọng vào
-                  công nghệ mạng không dây, IoT, ứng dụng với mục đích giảm chi phí và chuyên nghiệp trong môi trường công nghiệp. Chúng tôi hướng đến các công nghệ mới hiện nay như:<strong> LoRaWan, Zigbee... </strong>.
-                  Ngoài ra chúng tôi sẽ tư vấn giải pháp thích hợp nhất cho mỗi nhu cầu của khách hàng đưa ra.
-                </div>
-                <div class="footer_sub_about pb-3">
-                  Chúng tôi luôn khao khác những người đồng hành, đối tác xây dựng chiến lượng và đầu ra cho sản phẩm. Để dễ dàng đi đến với thực tế trong đời sống. Cũng như khẳng định giá trị của công nghệ mang lại.
-                </div>
-            </div>
-            <div class="col-12 col-md-3 col-lg-3">
-                <div class="footer_main_title py-3"> Danh mục</div>
-                <ul class="footer_menu">
-                    <li><a href="#" class=""><i class="fa fa-angle-right"></i>&nbsp;&nbsp; Nhận tư vấn thiết kế antenna</a></li>
-                    <li><a href="#" class=""><i class="fa fa-angle-right"></i>&nbsp;&nbsp; Nhận thiết kế mạch và lập trình mạch điện tử</a></li>
-                    <li><a href="#" class=""><i class="fa fa-angle-right"></i>&nbsp;&nbsp; Tư vấn giải pháp công nghệ, công nghiệp 4.0</a></li>
-                    <li><a href="#" class=""><i class="fa fa-angle-right"></i>&nbsp;&nbsp; Là đối tác tiềm năng xây dựng các sản phẩm thông minh</a></li>
-                </ul>
-            </div>
-            <div class="col-12 col-md-3 col-lg-3 position_footer_relative">
-                <div class="footer_main_title py-3"> Thị trường </div>
-                <div class="footer_makes_sub_font"> Dec 31, 2017</div>
-                <a href="#" class="footer_post pb-4"> Nông nhiệp </a>
-                <div class="footer_makes_sub_font"> Dec 31, 2017</div>
-                <a href="#" class="footer_post pb-4"> Thủy sản </a>
-                <div class="footer_makes_sub_font"> Dec 31, 2017</div>
-                <a href="#" class="footer_post pb-4"> Smart Home </a>
-                <div class="footer_makes_sub_font"> Dec 31, 2017</div>
-                <a href="#" class="footer_post pb-4"> Smart City </a>
-                <div class="footer_makes_sub_font"> Dec 31, 2017</div>
-                <a href="#" class="footer_post pb-4"> Công nghiệp </a>
-                <div class="footer_position_absolute"><img src="images/footer_sub_tipik.png" alt="img" class="width_footer_sub_img"/></div>
-            </div>
-
-        </div>
-
-    </div>
-</div>
-<footer style="margin-left: 0px; margin-right: 0px; height: 25px;">
-  <div>
-    <p><strong>&copy; Copyright 2018</strong> by <strong> Wireless Technology Lab </strong></p>
-  </div>
-</footer>
-<div class="gototop js-top">
-    <a href="#" class="js-gotop"><i class="fa fa-arrow-up"></i></a>
-</div>
-<script src="js/jquery.min.js"></script>
-<script src="js/owl.carousel.min.js"></script>
-<script src="js/tether.min.js"></script>
-<script src="js/jquery.waypoints.min.js"></script>
-<script src="js/admin.js"></script>
 </body>
+
 </html>
