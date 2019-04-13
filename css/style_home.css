@@ -87,25 +87,25 @@ a:focus {
 }
 
 .nav.navbar-nav {
-    background-color: rgba(255,255,255,.4);
+    background-color: rgba(224, 224, 224, 0.4);
 }
 
 .navbar-custom.top-nav-collapse .nav.navbar-nav {
     background-color: rgba(0,0,0,0);
-    color: white;
+    color: rgb(153, 152, 152);
 }
 
 
 .navbar-custom ul.nav li a {
 	font-size: 12px;
 	letter-spacing: 1px;
-    color: #444;
+    color: rgb(255, 255, 255);
 	text-transform: uppercase;
 	font-weight: 700;
 }
 
 .navbar-custom.top-nav-collapse ul.nav li a {
-	    -webkit-transition: all .2s ease-in-out;
+	-webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
 	color: #fff;
@@ -133,7 +133,7 @@ a:focus {
 }
 
 .navbar-custom.top-nav-collapse ul.nav ul.dropdown-menu li a {
-	color: #666;
+	color: white;
 }
 
 .navbar-custom .nav li a {
@@ -146,13 +146,17 @@ a:focus {
 .navbar-custom .nav li a:focus,
 .navbar-custom .nav li.active {
     outline: 0;
-    background-color: rgba(255,255,255,.2);
+    /* background-color: rgba(255,255,255,.2); */
+    background-color: #999;
+    color: white;
 }
 .navbar-custom .nav li a:hover,
 .navbar-custom .nav li a:focus,
 .navbar-custom .nav li.active {
     outline: 0;
-    background-color: rgba(255,255,255,.2);
+    /* background-color: rgba(255,255,255,.2); */
+    background-color: rgb(180, 175, 175);
+
 }
 
 .navbar-toggle {
@@ -164,6 +168,7 @@ a:focus {
 .navbar-toggle:focus,
 .navbar-toggle:active {
     outline: 0;
+    color: white;
 }
 
 
@@ -291,7 +296,7 @@ hr {
 
 
 .bg-dark {
-	background: #575757;
+	background: white;
 }
 
 /* --- section color var --- */
@@ -304,7 +309,7 @@ hr {
 Home data
 */
 #homedata {
-	  position:relative;
+	position:relative;
     width:100%;
     height: 100%;
     text-align: center;
