@@ -112,24 +112,29 @@ a:focus {
 }
 
 .navbar-custom ul.nav ul.dropdown-menu {
-	  border-radius: 0;
+      border-radius: 0;
+      background-color: rgb(45, 145, 175);
 }
 
 .navbar-custom ul.nav ul.dropdown-menu li {
-	border-bottom: 1px solid #f5f5f5;
+    border-bottom: 1px solid #2d9cb8;
+    text-transform: none;
 
 }
 
 .navbar-custom ul.nav ul.dropdown-menu li:last-child{
-	border-bottom: none;
+    border-bottom: none;
+    text-transform: none;
 }
 
 .navbar-custom ul.nav ul.dropdown-menu li a {
-	padding: 10px 20px;
+    padding: 10px 20px;
+    text-transform: none;
 }
 
 .navbar-custom ul.nav ul.dropdown-menu li a:hover {
-	background: #fefefe;
+    background: #e8fdff;
+    
 }
 
 .navbar-custom.top-nav-collapse ul.nav ul.dropdown-menu li a {
@@ -540,8 +545,8 @@ form#contact-form input:focus,form#contact-form select:focus,form#contact-form t
 
 footer {
 	text-align: center;
-	padding: 50px 0 ;
-
+	padding: 10px 0 ;
+    background-color: white;
 }
 
 footer p {
