@@ -3,6 +3,9 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="Bui Van Xung">
+        <title>WT Solutions</title>
     </head>
     <body>
         <h1 class="center">Cập nhật thông tin tài khoản</h1>
@@ -11,14 +14,14 @@
         <strong>Serial Number</strong>:<br>
         <input type="text" name="seri" required="required" pattern="[A-Z0-9]{12}" >
         <br>
-        <p><font color= "red">* <strong>Serial Number</strong>  gồm có 10 kí tự là số, kí tự in hoa và không có khoảng trắng.</font></p>
+        <p><font color= "red">* <strong>Serial Number</strong>  gồm có 12 kí tự là số, kí tự in hoa và không có khoảng trắng.</font></p><br>
         <strong>Token mới</strong> :<br>
-        <input type="text" name="token" required="required" pattern="[a-z0-9]{32}">
-        <p><font color= "red">* <strong>Token mới</strong>  gồm có 32 kí tự là số, kí tự thường và không có khoảng trắng. Lấy trên app điện thoại.</font></p>
+        <input type="text" name="token" required="required" pattern="[a-z0-9]{32}" size="30px">
+        <p><font color= "red">* <strong>Token mới</strong>  gồm có 32 kí tự là số, kí tự thường và không có khoảng trắng. Lấy trên app điện thoại.</font></p> <br>
         <strong>Mật khâu mới</strong> :<br>
         <input type="password" name="pwd" required="required" ><br><br>
         <strong>Email gốc:</strong> <br>
-        <input type="email" name="email" required="required" >
+        <input type="email" name="email" required="required" size="30px">
         <p><font color= "red">* <strong>Email gốc</strong>  đúng định dạng email và là tài khoản đăng nhập app Blynk.</font></p> <br>
         <p>Mọi thông tin sẽ được cập nhập vào hệ thống. Tắt và Bật lại thiết bị phần cứng để được cập nhập thông tin mới.</p>
         <input type="submit" value="Gửi">

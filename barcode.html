@@ -1,0 +1,48 @@
+<html>
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>WT Solutions</title>
+    <style>
+      #barcodeTarget{
+        margin-top: 30px;
+      }        
+    </style>
+    
+    <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="js/jquery-barcode.js"></script>
+    <script type="text/javascript">
+      function generateBarcode(){
+        var value = $("#barcodeValue").val();
+        var btype = "code128";
+        var renderer = "css";
+
+        var settings = {
+          output:renderer,
+          bgColor: "#FFFFFF",
+          color: "#000000",
+          barWidth: 2,
+          barHeight: 40,
+          fontSize: 20
+        };
+        $("#barcodeTarget").html("").show().barcode(value, btype, settings);
+      }
+      $(function(){
+        generateBarcode();
+      });
+  
+    </script>
+  </head>
+  <body>
+    <div>
+      <br>
+      <p> Please insert Code: </p>
+      <input type="text" id="barcodeValue" required="required" pattern="[A-Z0-9]{12}" size="30px">
+      <p><p>
+      <div id="submit">
+        <input type="submit" onclick="generateBarcode();" value="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Generate&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;">
+      </div> 
+    </div>
+    <div id="barcodeTarget" class="barcodeTarget"></div>
+  </body>
+</html>
